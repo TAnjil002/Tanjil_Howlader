@@ -591,23 +591,28 @@
 }
 
 /* Download Button Glow Effect */
+/* Always-Visible Download Button */
 .btn-download {
   background-color: #00d9ff;
-  color: #0a0f14;
-  font-weight: 600;
-  padding: 12px 32px;
+  color: #0a0f14 !important;
+  font-weight: 700;
+  padding: 14px 36px;
   border-radius: 50px;
-  box-shadow: 0 0 15px rgba(0, 217, 255, 0.4);
-  transition: all 0.3s ease;
+  border: 2px solid #00d9ff;
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.6); /* Always visible glow */
   display: inline-block;
-  border: none;
+  opacity: 1 !important; /* Forces visibility without hover */
+  visibility: visible !important;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
+/* Hover Accent */
 .btn-download:hover {
   background-color: #00eaff;
-  color: #000;
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 0 30px rgba(0, 217, 255, 0.8);
+  color: #000000 !important;
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 0 35px rgba(0, 217, 255, 0.9);
 }
 
 
