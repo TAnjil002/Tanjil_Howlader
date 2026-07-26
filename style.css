@@ -537,7 +537,145 @@
   font-size: 0.85rem;
 }
 
+/* ============================
+   Resume / CV Section
+============================ */
+#resume {
+  background-color: #0d1b2a;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  overflow: hidden;
+}
 
+/* Glassmorphism Resume Cards */
+.resume-card {
+  background: rgba(17, 24, 33, 0.85);
+  border: 1px solid rgba(0, 217, 255, 0.2);
+  border-radius: 12px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.1);
+  transition: all 0.4s ease;
+}
+
+.resume-card:hover {
+  transform: translateY(-8px);
+  border-color: #00d9ff;
+  box-shadow: 0 0 30px rgba(0, 217, 255, 0.3);
+}
+
+.resume-card h4 {
+  color: #00d9ff;
+}
+
+/* Timeline Accent Bars */
+.timeline-item {
+  position: relative;
+  padding-left: 15px;
+  border-left: 2px solid rgba(0, 217, 255, 0.3);
+  transition: border-color 0.3s ease;
+}
+
+.timeline-item:hover {
+  border-left-color: #00d9ff;
+}
+
+/* Badges Custom Styling */
+.badge-cyan {
+  background-color: rgba(0, 217, 255, 0.15);
+  color: #00d9ff;
+  border: 1px solid #00d9ff;
+  font-weight: 500;
+}
+
+/* Download Button Glow Effect */
+.btn-download {
+  background-color: #00d9ff;
+  color: #0a0f14;
+  font-weight: 600;
+  padding: 12px 32px;
+  border-radius: 50px;
+  box-shadow: 0 0 15px rgba(0, 217, 255, 0.4);
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: none;
+}
+
+.btn-download:hover {
+  background-color: #00eaff;
+  color: #000;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 217, 255, 0.8);
+}
+
+
+/* ============================
+   Contact Me Section (Animated & Enhanced)
+============================ */
+#contact {
+  background-color: #0a0f14; 
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.contact-form {
+  background-color: #111821; 
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 217, 255, 0.2);
+  box-shadow: 0 0 25px rgba(0, 217, 255, 0.15);
+  transition: all 0.4s ease;
+}
+
+.contact-form:hover {
+  border-color: #00d9ff;
+  box-shadow: 0 0 35px rgba(0, 217, 255, 0.25);
+}
+
+.contact-form .form-label {
+  color: #00d9ff; 
+  font-weight: 500;
+}
+
+.contact-form .form-control {
+  background-color: #1b2230; 
+  border: 1px solid rgba(0, 217, 255, 0.3);
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+  background-color: #1b2230;
+  border-color: #00d9ff;
+  box-shadow: 0 0 12px rgba(0, 217, 255, 0.6);
+  color: #fff;
+}
+
+.contact-form textarea.form-control {
+  resize: none;
+}
+
+.contact-form .btn-primary {
+  background-color: #00d9ff;
+  border: none;
+  color: #0a0f14;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 12px 40px;
+  border-radius: 8px;
+}
+
+.contact-form .btn-primary:hover {
+  background-color: #00eaff;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.6);
+}
 
 /* ============================
    💎💎💎Responsive💎💎💎
@@ -600,5 +738,19 @@
   .social-icon { font-size: 1rem; }
   
 }
+/* Resume Section Mobile */
+  .resume-card {
+    padding: 20px;
+  }
+
+  /* Contact section Mobile */
+  #contact {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .contact-form {
+    padding: 25px 18px;
+  }
 
 
